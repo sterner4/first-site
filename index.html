@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bonds Restaurant - Authentic Dining Experience</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Bonds Restaurant</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+    <a href="#" id="reservation-link">Reservations</a>
+  </nav>
+</header>
+
+<div class="cart-icon" id="cart-icon">
+  <i class="fas fa-shopping-cart"></i>
+  <span class="cart-count" id="cart-count">0</span>
+</div>
+
+<section class="special-offers">
+  <div class="offer-text">Special Offer: 20% off on all main dishes every Tuesday! • Free dessert with any order over Ksh 1500 • Happy Hour: 5 PM - 7 PM with 50% off on drinks</div>
+</section>
+
+<section class="hero" id="home">
+  Welcome to Bonds!
+</section>
+
+<section class="section" id="menu">
+  <h2>Our Menu</h2>
+  
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-filter="all">All Items</button>
+    <button class="filter-btn" data-filter="main">Main Dishes</button>
+    <button class="filter-btn" data-filter="drinks">Drinks</button>
+    <button class="filter-btn" data-filter="desserts">Desserts</button>
+  </div>
+
+  <div class="menu-category">
+    <h3>Main Dishes</h3>
+    <div class="menu-items">
+      <div class="menu-card" data-item="Beef Steak" data-category="main">
+        <img src="https://cdn.pixabay.com/photo/2017/04/30/09/30/steak-2272464_1280.jpg" alt="Beef Steak" />
+        <h4>Beef Steak</h4>
+        <p>Juicy grilled steak with herbs and our special seasoning</p>
+        <strong>Ksh 850</strong>
+      </div>
+      <div class="menu-card" data-item="Grilled Chicken" data-category="main">
+        <img src="https://www.onceuponachef.com/images/2020/05/best-grilled-chicken-1200x1658.jpg" alt="Grilled Chicken" />
+        <h4>Grilled Chicken</h4>
+        <p>Spicy roasted chicken served with fresh garden salad</p>
+        <strong>Ksh 700</strong>
+      </div>
+      <div class="menu-card" data-item="Italian Pasta" data-category="main">
+        <img src="https://images.pexels.com/photos/769969/pexels-photo-769969.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Pasta" />
+        <h4>Italian Pasta</h4>
+        <p>Creamy pasta with mushrooms and parmesan cheese</p>
+        <strong>Ksh 600</strong>
+      </div>
+      <div class="menu-card" data-item="Fish Fillet" data-category="main">
+        <img src="https://images.pexels.com/photos/262959/pexels-photo-262959.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Fish Fillet" />
+        <h4>Fish Fillet</h4>
+        <p>Fresh fish fillet with lemon butter sauce</p>
+        <strong>Ksh 750</strong>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-category">
+    <h3>Drinks</h3>
+    <div class="menu-items">
+      <div class="menu-card" data-item="Fresh Juice" data-category="drinks">
+        <img src="https://images.pexels.com/photos/96974/pexels-photo-96974.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Fresh Juice" />
+        <h4>Fresh Juice</h4>
+        <p>Orange, Mango or Pineapple - freshly squeezed</p>
+        <strong>Ksh 250</strong>
+      </div>
+      <div class="menu-card" data-item="Hot Coffee" data-category="drinks">
+        <img src="https://images.pexels.com/photos/302904/pexels-photo-302904.jpeg?cs=srgb&dl=pexels-chevanon-302904.jpg&fm=jpg" alt="Hot Coffee" />
+        <h4>Hot Coffee</h4>
+        <p>Classic black or with milk - freshly brewed</p>
+        <strong>Ksh 200</strong>
+      </div>
+      <div class="menu-card" data-item="Premium Wine" data-category="drinks">
+        <img src="https://images.pexels.com/photos/1283219/pexels-photo-1283219.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Wine" />
+        <h4>Premium Wine</h4>
+        <p>Selection of red and white wines from our cellar</p>
+        <strong>Ksh 1200</strong>
+      </div>
+    </div>
+  </div>
+  
+  <div class="menu-category">
+    <h3>Desserts</h3>
+    <div class="menu-items">
+      <div class="menu-card" data-item="Chocolate Cake" data-category="desserts">
+        <img src="https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Chocolate Cake" />
+        <h4>Chocolate Cake</h4>
+        <p>Rich chocolate cake with vanilla ice cream</p>
+        <strong>Ksh 350</strong>
+      </div>
+      <div class="menu-card" data-item="Fruit Salad" data-category="desserts">
+        <img src="https://images.pexels.com/photos/1213710/pexels-photo-1213710.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Fruit Salad" />
+        <h4>Fruit Salad</h4>
+        <p>Fresh seasonal fruits with honey dressing</p>
+        <strong>Ksh 300</strong>
+      </div>
+      <div class="menu-card" data-item="Ice Cream" data-category="desserts">
+        <img src="https://images.pexels.com/photos/1625235/pexels-photo-1625235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Ice Cream" />
+        <h4>Ice Cream</h4>
+        <p>Vanilla, chocolate or strawberry ice cream</p>
+        <strong>Ksh 250</strong>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="section" id="gallery">
+  <h2>Gallery</h2>
+  <p>Take a look at our restaurant and delicious dishes</p>
+  
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="images.jpeg" alt="Restaurant Interior">
+    </div>
+    <div class="gallery-item">
+      <img src="dining table.jpeg" alt="Dining Table">
+    </div>
+    <div class="gallery-item">
+      <img src="steak dish.jpeg" alt="Steak Dish">
+    </div>
+    <div class="gallery-item">
+      <img src="pasta dish.jpeg" alt="Pasta Dish">
+    </div>
+    <div class="gallery-item">
+      <img src="desserts.jpeg" alt="Dessert">
+    </div>
+    <div class="gallery-item">
+      <img src="restaurant bar.jpeg" alt="Restaurant Bar">
+    </div>
+  </div>
+</section>
+
+<section class="section" id="testimonials" style="background-color: #f9f9f9;">
+  <h2>What Our Customers Say</h2>
+  
+  <div class="testimonials">
+    <div class="testimonial-card">
+      <div class="testimonial-text">
+        "The best dining experience I've had in Nairobi! The steak was perfectly cooked and the service was exceptional."
+      </div>
+      <div class="testimonial-author">
+        <div class="author-avatar">JM</div>
+        <div>
+          <strong>Athman Rajab</strong>
+          <div>Regular Customer</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="testimonial-card">
+      <div class="testimonial-text">
+        "We held our anniversary dinner at Bonds and it was magical. The ambiance, food, and staff made it a night to remember."
+      </div>
+      <div class="testimonial-author">
+        <div class="author-avatar">SK</div>
+        <div>
+          <strong>John mwero</strong>
+          <div>First-time Visitor</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="testimonial-card">
+      <div class="testimonial-text">
+        "The variety of dishes is impressive, and everything we've tried has been delicious. Highly recommend the grilled chicken!"
+      </div>
+      <div class="testimonial-author">
+        <div class="author-avatar">DO</div>
+        <div>
+          <strong>Muzamil mohamed</strong>
+          <div>Food Enthusiast</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <h2>Contact Us</h2>
+  <div class="contact-info">
+    <p><strong>Location:</strong> Bonds Restaurant, Upper Hill opposite Britam, Nairobi</p>
+    <p><strong>Phone:</strong> +254 712 345678</p>
+    <p><strong>Email:</strong> info@bondsrestaurant.co.ke</p>
+    <p><strong>Opening Hours:</strong> 8:00 AM – 10:00 PM Daily</p>
+    <button class="btn" id="contact-btn">Get Directions</button>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Bonds Restaurant | All Rights Reserved</p>
+  <div class="social-links">
+    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+  </div>
+</footer>
+<div class="modal" id="reservation-modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2>Make a Reservation</h2>
+    <form class="reservation-form" id="reservation-form">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="date">Date</label>
+        <input type="date" id="date" required>
+      </div>
+      <div class="form-group">
+        <label for="time">Time</label>
+        <input type="time" id="time" required>
+      </div>
+      <div class="form-group">
+        <label for="guests">Number of Guests</label>
+        <select id="guests" required>
+          <option value="1">1 Person</option>
+          <option value="2">2 People</option>
+          <option value="3">3 People</option>
+          <option value="4">4 People</option>
+          <option value="5">5 People</option>
+          <option value="6">6+ People</option>
+        </select>
+      </div>
+      <button type="submit" class="btn">Book Table</button>
+    </form>
+  </div>
+</div>
+<div class="modal" id="item-modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <img class="modal-image" id="modal-image" src="" alt="">
+    <h2 id="modal-title"></h2>
+    <p id="modal-description"></p>
+    <p><strong id="modal-price"></strong></p>
+    <div style="display: flex; gap: 10px; margin-top: 20px;">
+      <button class="btn" id="add-to-cart">Add to Order</button>
+      <button class="btn" style="background-color: #861010;" id="order-now">Order Now</button>
+    </div>
+  </div>
+</div>
+<div class="cart-modal" id="cart-modal">
+  <div class="cart-header">
+    <h3>Your Order</h3>
+    <span class="close-modal">&times;</span>
+  </div>
+  <div class="cart-items" id="cart-items">
+  </div>
+  <div class="cart-total">
+    Total: <span id="cart-total">Ksh 0</span>
+  </div>
+  <button class="checkout-btn" id="checkout-btn">Proceed to Checkout</button>
+</div>
+<div class="gallery-modal" id="gallery-modal">
+  <img src="" alt="" id="gallery-modal-img">
+</div>
+<div class="dark-overlay" id="dark-overlay"></div>
+<div class="notification" id="notification">
+  <span id="notification-text"></span>
+</div>
+<div class="back-to-top" id="back-to-top">
+  ↑
+</div>
+
+<script>
+  const header = document.querySelector('header');
+  const reservationLink = document.getElementById('reservation-link');
+  const reservationModal = document.getElementById('reservation-modal');
+  const itemModal = document.getElementById('item-modal');
+  const cartModal = document.getElementById('cart-modal');
+  const galleryModal = document.getElementById('gallery-modal');
+  const darkOverlay = document.getElementById('dark-overlay');
+  const closeModals = document.querySelectorAll('.close-modal');
+  const reservationForm = document.getElementById('reservation-form');
+  const menuCards = document.querySelectorAll('.menu-card');
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const cartIcon = document.getElementById('cart-icon');
+  const cartCount = document.getElementById('cart-count');
+  const cartItems = document.getElementById('cart-items');
+  const cartTotal = document.getElementById('cart-total');
+  const checkoutBtn = document.getElementById('checkout-btn');
+  const modalImage = document.getElementById('modal-image');
+  const modalTitle = document.getElementById('modal-title');
+  const modalDescription = document.getElementById('modal-description');
+  const modalPrice = document.getElementById('modal-price');
+  const addToCartBtn = document.getElementById('add-to-cart');
+  const orderNowBtn = document.getElementById('order-now');
+  const notification = document.getElementById('notification');
+  const notificationText = document.getElementById('notification-text');
+  const backToTopBtn = document.getElementById('back-to-top');
+  const contactBtn = document.getElementById('contact-btn');
+  const galleryItems = document.querySelectorAll('.gallery-item');
+  const galleryModalImg = document.getElementById('gallery-modal-img');
+  let cart = [];
+  let currentItem = null;
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+    if (window.scrollY > 500) {
+      backToTopBtn.classList.add('show');
+    } else {
+      backToTopBtn.classList.remove('show');
+    }
+  });
+  reservationLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    reservationModal.style.display = 'flex';
+    darkOverlay.classList.add('active');
+  });
+  cartIcon.addEventListener('click', () => {
+    cartModal.style.display = 'block';
+    darkOverlay.classList.add('active');
+  });
+  menuCards.forEach(card => {
+    card.addEventListener('click', () => {
+      const itemName = card.getAttribute('data-item');
+      const itemImage = card.querySelector('img').src;
+      const itemDescription = card.querySelector('p').textContent;
+      const itemPrice = card.querySelector('strong').textContent;
+      
+      modalImage.src = itemImage;
+      modalTitle.textContent = itemName;
+      modalDescription.textContent = itemDescription;
+      modalPrice.textContent = itemPrice;
+      
+      currentItem = {
+        name: itemName,
+        image: itemImage,
+        description: itemDescription,
+        price: itemPrice,
+        quantity: 1
+      };
+      itemModal.style.display = 'flex';
+      darkOverlay.classList.add('active');
+    });
+  });
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+      const filter = button.getAttribute('data-filter');
+      menuCards.forEach(card => {
+        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+  galleryItems.forEach(item => {
+    item.addEventListener('click', () => {
+      const imgSrc = item.querySelector('img').src;
+      galleryModalImg.src = imgSrc;
+      galleryModal.style.display = 'flex';
+      darkOverlay.classList.add('active');
+    });
+  });
+  closeModals.forEach(closeBtn => {
+    closeBtn.addEventListener('click', () => {
+      reservationModal.style.display = 'none';
+      itemModal.style.display = 'none';
+      cartModal.style.display = 'none';
+      galleryModal.style.display = 'none';
+      darkOverlay.classList.remove('active');
+    });
+  });
+  darkOverlay.addEventListener('click', () => {
+    reservationModal.style.display = 'none';
+    itemModal.style.display = 'none';
+    cartModal.style.display = 'none';
+    galleryModal.style.display = 'none';
+    darkOverlay.classList.remove('active');
+  });
+  addToCartBtn.addEventListener('click', () => {
+    if (currentItem) {
+      addToCart(currentItem);
+      itemModal.style.display = 'none';
+      darkOverlay.classList.remove('active');
+    }
+  });
+  orderNowBtn.addEventListener('click', () => {
+    if (currentItem) {
+      addToCart(currentItem);
+      itemModal.style.display = 'none';
+      cartModal.style.display = 'block';
+      updateCartDisplay();
+    }
+  });
+  function addToCart(item) {
+    const existingItem = cart.find(cartItem => cartItem.name === item.name);
+    if (existingItem) {
+      existingItem.quantity += 1;
+    } else {
+      cart.push({...item});
+    }
+    updateCartCount();
+    showNotification(`${item.name} added to your order!`);
+  }
+  function updateCartCount() {
+    const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
+    cartCount.textContent = totalItems;
+  }
+  function updateCartDisplay() {
+    cartItems.innerHTML = '';
+    if (cart.length === 0) {
+      cartItems.innerHTML = '<p>Your cart is empty</p>';
+      cartTotal.textContent = 'Ksh 0';
+      return;
+    }
+    let total = 0;
+    cart.forEach((item, index) => {
+      const itemElement = document.createElement('div');
+      itemElement.className = 'cart-item';
+      const price = parseInt(item.price.replace(/\D/g, ''));
+      const itemTotal = price * item.quantity;
+      total += itemTotal;
+      
+      itemElement.innerHTML = `
+        <div class="cart-item-info">
+          <h4>${item.name}</h4>
+          <p>${item.price} x ${item.quantity}</p>
+        </div>
+        <div class="cart-item-controls">
+          <button class="decrease-btn" data-index="${index}">-</button>
+          <span>${item.quantity}</span>
+          <button class="increase-btn" data-index="${index}">+</button>
+          <button class="remove-btn" data-index="${index}"><i class="fas fa-trash"></i></button>
+        </div>
+      `;
+      cartItems.appendChild(itemElement);
+    });
+    cartTotal.textContent = `Ksh ${total}`;
+    document.querySelectorAll('.decrease-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const index = e.target.getAttribute('data-index');
+        decreaseQuantity(index);
+      });
+    });
+    
+    document.querySelectorAll('.increase-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const index = e.target.getAttribute('data-index');
+        increaseQuantity(index);
+      });
+    });
+    
+    document.querySelectorAll('.remove-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const index = e.target.getAttribute('data-index');
+        removeFromCart(index);
+      });
+    });
+  }
+  function decreaseQuantity(index) {
+    if (cart[index].quantity > 1) {
+      cart[index].quantity -= 1;
+    } else {
+      cart.splice(index, 1);
+    }
+    updateCartDisplay();
+    updateCartCount();
+  }
+  function increaseQuantity(index) {
+    cart[index].quantity += 1;
+    updateCartDisplay();
+    updateCartCount();
+  }
+  function removeFromCart(index) {
+    cart.splice(index, 1);
+    updateCartDisplay();
+    updateCartCount();
+  }
+  checkoutBtn.addEventListener('click', () => {
+    if (cart.length === 0) {
+      showNotification('Your cart is empty');
+      return;
+    }
+    showNotification('Proceeding to checkout...');
+    setTimeout(() => {
+      showNotification('Order placed successfully! Your food will be ready soon.');
+      cart = [];
+      updateCartDisplay();
+      updateCartCount();
+      cartModal.style.display = 'none';
+      darkOverlay.classList.remove('active');
+    }, 1500);
+  });
+  reservationForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const formData = {
+      name: document.getElementById('name').value,
+      email: document.getElementById('email').value,
+      phone: document.getElementById('phone').value,
+      date: document.getElementById('date').value,
+      time: document.getElementById('time').value,
+      guests: document.getElementById('guests').value
+    };
+    console.log('Reservation submitted:', formData);
+    showNotification('Your reservation has been submitted successfully!');
+    reservationModal.style.display = 'none';
+    darkOverlay.classList.remove('active');
+    reservationForm.reset();
+  });
+
+  function showNotification(message) {
+    notificationText.textContent = message;
+    notification.classList.add('show');
+    
+    setTimeout(() => {
+      notification.classList.remove('show');
+    }, 3000);
+  }
+  backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+  contactBtn.addEventListener('click', () => {
+    showNotification('Opening directions in Google Maps...');
+    setTimeout(() => {
+      showNotification('Bonds Restaurant, Upper Hill opposite Britam, Nairobi');
+    }, 1000);
+  });
+  document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', (e) => {
+      if (link.getAttribute('href').startsWith('#')) {
+        e.preventDefault();
+        const targetId = link.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        
+        if (targetSection) {
+          window.scrollTo({
+            top: targetSection.offsetTop - 80,
+            behavior: 'smooth'
+          });
+        }
+      }
+    });
+  });
+  const today = new Date().toISOString().split('T')[0];
+  document.getElementById('date').setAttribute('min', today);
+</script>
+
+</body>
+</html>
